@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/menu_schedule">
+
+    <fragment
+        android:id="@+id/menu_adjusts"
+        android:name="com.example.medindicator.features.adjusts.AdjustsFragment"
+        android:label="fragment_adjusts"
+        tools:layout="@layout/fragment_adjusts" />
+    <fragment
+        android:id="@+id/menu_historic"
+        android:name="com.example.medindicator.features.historic.HistoricFragment"
+        android:label="fragment_historic"
+        tools:layout="@layout/fragment_historic" />
+    <fragment
+        android:id="@+id/menu_medicines"
+        android:name="com.example.medindicator.features.medicines.MedicinesFragment"
+        android:label="fragment_medicines"
+        tools:layout="@layout/fragment_medicines" />
+    <fragment
+        android:id="@+id/menu_schedule"
+        android:name="com.example.medindicator.features.schedules.SchedulesFragment"
+        android:label="fragment_schedules"
+        tools:layout="@layout/fragment_schedules" />
+    <fragment
+        android:id="@+id/menu_add_medicine"
+        android:name="com.example.medindicator.features.add.medicines.AddMedicineFragment"
+        android:label="fragment_add_medicine"
+        tools:layout="@layout/fragment_add_medicine" />
+</navigation>

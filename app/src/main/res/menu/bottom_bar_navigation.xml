@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_schedule"
+        android:title="@string/menu_schedule"
+        android:icon="@drawable/ic_schedule"
+        android:enabled="true" />
+    <item
+        android:id="@+id/menu_medicines"
+        android:title="@string/menu_medicines"
+        android:icon="@drawable/ic_pill"
+        android:enabled="true" />
+    <item
+        android:id="@+id/menu_add_medicine"
+        android:title="@string/menu_add_medicine"
+        android:icon="@drawable/ic_add"
+        android:enabled="true" />
+    <item
+        android:id="@+id/menu_historic"
+        android:title="@string/menu_historic"
+        android:icon="@drawable/ic_historic"
+        android:enabled="true" />
+    <item
+        android:id="@+id/menu_adjusts"
+        android:title="@string/menu_adjusts"
+        android:icon="@drawable/ic_adjusts"
+        android:enabled="true" />
+</menu>
