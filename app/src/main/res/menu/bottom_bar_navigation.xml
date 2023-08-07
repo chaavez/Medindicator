@@ -9,10 +9,6 @@
         android:title="@string/menu_medicines"
         android:icon="@drawable/ic_menu_medicines" />
     <item
-        android:id="@+id/menu_add_medicine"
-        android:title="@string/menu_add_medicine"
-        android:icon="@drawable/ic_menu_add_medicines" />
-    <item
         android:id="@+id/menu_historic"
         android:title="@string/menu_historic"
         android:icon="@drawable/ic_menu_historic" />

@@ -18,11 +18,6 @@
         tools:layout="@layout/fragment_medicines" />
 
     <fragment
-        android:id="@+id/menu_add_medicine"
-        android:name="com.example.medindicator.features.add.medicines.AddMedicineFragment"
-        android:label="fragment_add_medicine"
-        tools:layout="@layout/fragment_add_medicine" />
-    <fragment
         android:id="@+id/menu_historic"
         android:name="com.example.medindicator.features.historic.HistoricFragment"
         android:label="fragment_historic"
