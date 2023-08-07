@@ -15,6 +15,7 @@ import com.example.medindicator.features.historic.HistoricFragment
 import com.example.medindicator.features.medicines.MedicinesFragment
 import com.example.medindicator.features.schedules.SchedulesFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.navigation.NavigationBarView
 
 class MedindicatorActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -31,5 +32,8 @@ class MedindicatorActivity : AppCompatActivity() {
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragment_container) as NavHostFragment
         navController = navHostFragment.navController
         NavigationUI.setupWithNavController(binding.mainBottomNavigation, navController)
+        binding.mainBottomNavigation.setOnItemReselectedListener {
+            navController.currentDestination
+        }
     }
 }
