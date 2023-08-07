@@ -1,28 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/menu_schedule"
-        android:title="@string/menu_schedule"
-        android:icon="@drawable/ic_menu_schedule"
-        android:enabled="true" />
+        android:id="@+id/menu_home"
+        android:title="@string/menu_home"
+        android:icon="@drawable/ic_menu_home" />
     <item
         android:id="@+id/menu_medicines"
         android:title="@string/menu_medicines"
-        android:icon="@drawable/ic_menu_medicines"
-        android:enabled="true" />
-    <item
-        android:id="@+id/menu_add_medicine"
-        android:title="@string/menu_add_medicine"
-        android:icon="@drawable/ic_menu_add_medicines"
-        android:enabled="true" />
+        android:icon="@drawable/ic_menu_medicines" />
     <item
         android:id="@+id/menu_historic"
         android:title="@string/menu_historic"
-        android:icon="@drawable/ic_menu_historic"
-        android:enabled="true" />
+        android:icon="@drawable/ic_menu_historic" />
     <item
         android:id="@+id/menu_adjusts"
         android:title="@string/menu_adjusts"
-        android:icon="@drawable/ic_menu_settings"
-        android:enabled="true" />
+        android:icon="@drawable/ic_menu_settings" />
 </menu>

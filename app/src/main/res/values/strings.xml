@@ -3,8 +3,7 @@
     <string name="app_name">Medindicator</string>
     <!--BottomBar-->
     <string name="menu_medicines">Medicamentos</string>
-    <string name="menu_schedule">Horários</string>
+    <string name="menu_home">Início</string>
     <string name="menu_historic">Histórico</string>
-    <string name="menu_add_medicine">Adicionar</string>
     <string name="menu_adjusts">Ajustes</string>
 </resources>
