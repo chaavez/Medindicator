@@ -5,7 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.medindicator.R
 import com.example.medindicator.databinding.FragmentHomeBinding
 import com.example.medindicator.models.Mock
 
@@ -29,15 +31,25 @@ class HomeFragment : Fragment() {
         setupRecyclerView()
     }
 
+    override fun onResume() {
+        super.onResume()
+        addMedicine()
+    }
+
     private fun setupRecyclerView() {
         binding.scheduleRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.scheduleRecyclerView.adapter = homeAdapter
-        setupmocks()
+        setupMocks()
     }
 
-    private fun setupmocks() {
+    private fun setupMocks() {
         val mockData = Mock().mockData()
         homeAdapter.setSchedule(mockData)
     }
 
+    private fun addMedicine() {
+        binding.addFloatingActionButton.setOnClickListener {
+            findNavController().navigate(R.id.action_menu_home_to_addMedicineFragment)
+        }
+    }
 }
