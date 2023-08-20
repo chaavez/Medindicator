@@ -12,8 +12,4 @@
         android:id="@+id/menu_historic"
         android:title="@string/menu_historic"
         android:icon="@drawable/ic_menu_historic" />
-    <item
-        android:id="@+id/menu_adjusts"
-        android:title="@string/menu_adjusts"
-        android:icon="@drawable/ic_menu_settings" />
 </menu>
