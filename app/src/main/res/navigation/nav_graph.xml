@@ -31,13 +31,5 @@
         android:name="com.example.medindicator.features.add.medicines.AddMedicineFragment"
         android:label="fragment_add_medicine"
         tools:layout="@layout/fragment_add_medicine" >
-        <action
-            android:id="@+id/action_addMedicineFragment_to_scheduleFragment"
-            app:destination="@id/scheduleFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/scheduleFragment"
-        android:name="com.example.medindicator.features.add.medicines.ScheduleFragment"
-        android:label="fragment_schedule"
-        tools:layout="@layout/fragment_schedule" />
 </navigation>

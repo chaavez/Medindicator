@@ -10,7 +10,6 @@ import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
 import com.example.medindicator.R
 import com.example.medindicator.databinding.FragmentAddMedicineBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -130,9 +129,10 @@ class AddMedicineFragment : Fragment() {
         binding.dosageTextInputEditText.addTextChangedListener(textWatcher())
         binding.startDateTextInputEditText.addTextChangedListener(textWatcher())
         binding.endAutoCompleteTextView.addTextChangedListener(textWatcher())
+        val fragmentBottomSheetFragment = ScheduleBottomSheetFragment()
 
         binding.nextButton.setOnClickListener {
-            findNavController().navigate(R.id.action_addMedicineFragment_to_scheduleFragment)
+            fragmentBottomSheetFragment.show(childFragmentManager, "SchedulesBottomSheet")
         }
     }
 
