@@ -30,6 +30,18 @@ class ScheduleBottomSheetFragment : BottomSheetDialogFragment() {
     private fun setupRecyclerView() {
         val recyclerView = binding.bottomSheetRecyclerView
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
+        recyclerView.adapter = ScheduleBottomSheetAdapter(setupListOptions())
     }
 
+    private fun setupListOptions(): ArrayList<String> {
+        return arrayListOf(
+            "Uma em uma hora",
+            "Três em três horas",
+            "Quatro em quatro horas",
+            "Seis em seis horas",
+            "Oito em oito horas",
+            "Doze em doze horas",
+            "Um em um dia"
+        )
+    }
 }
